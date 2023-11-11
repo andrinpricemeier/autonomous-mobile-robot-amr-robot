@@ -1,0 +1,335 @@
+2021-06-03 13:34:08,128|enter|DEBUG|Entering state WarmingUpState
+2021-06-03 13:34:08,407|configure|INFO|Configure image logger image_saving: True, image_path/home/gruppe38/dev/tobias/jetson-robot/robot/test_images/, image_logging:False, image_logging_port:62222
+2021-06-03 13:34:08,430|__check_server|DEBUG|Checking if the Triton server is up and running.
+2021-06-03 13:34:08,724|detect|DEBUG|TensorRTObjectDetection starting detection.
+2021-06-03 13:34:08,977|infer|DEBUG|Inferring through Triton server.
+2021-06-03 13:34:29,696|infer|DEBUG|Inference completed.
+2021-06-03 13:34:29,979|detect|DEBUG|TensorRTObjectDetection detection finished.
+2021-06-03 13:34:29,981|__check_server|DEBUG|Object detection is ready.
+2021-06-03 13:34:29,999|__init__|INFO|init UART: port /dev/ttyTHS1, baud_rate: 38400, write_timeout: 2, read_timeout: 60
+2021-06-03 13:34:30,000|reconnect|INFO|UART - reconnecting
+2021-06-03 13:34:30,317|__init__|INFO|Setting volume to 100%.
+2021-06-03 13:34:36,964|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 13:34:38,980|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 13:34:40,986|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 13:34:45,659|__play|DEBUG|Audio output of warming_up.mp3 succeeded.
+2021-06-03 13:34:45,847|__start_and_monitor|DEBUG|Restarting nvargus-daemon
+2021-06-03 13:34:46,244|__start_and_monitor|INFO|Starting RTSP. Binary=/usr/local/stairway-jones/rtsp_server/test-launch. Pipeline: nvarguscamerasrc ! video/x-raw(memory:NVMM),width=640,height=480,framerate=60/1 ! nvvidconv flip-method=2 ! omxh264enc ! video/x-h264,profile=baseline ! rtph264pay name=pay0 pt=96
+2021-06-03 13:34:47,447|__start_and_monitor|INFO|RTSP Server started.
+2021-06-03 13:34:47,448|__init_camera|DEBUG|Opening camera
+2021-06-03 13:35:00,177|__init_camera|DEBUG|Camera opened
+2021-06-03 13:35:01,512|__init__|DEBUG|MaxObjectCountObjectDetectionEvaluator with objects: [<DetectedObject.edge: 9>]
+2021-06-03 13:35:01,535|__init__|DEBUG|MaxObjectCountObjectDetectionEvaluator with objects: [<DetectedObject.stairs: 1>]
+2021-06-03 13:35:01,897|connect|INFO|connect host:localhost, port: 58823
+2021-06-03 13:35:01,932|run|DEBUG|State WarmingUpState completed.
+2021-06-03 13:35:01,938|run|DEBUG|Entering state ManualDrivingState.
+2021-06-03 13:35:05,362|__play|DEBUG|Audio output of zustand_ManualDrivingState.mp3 succeeded.
+2021-06-03 13:35:05,370|receive|DEBUG|receive command 
+2021-06-03 13:44:45,685|__start_and_monitor|DEBUG|RTSP server exited with code -2
+2021-06-03 13:44:48,273|__play|DEBUG|Audio output of lauf_gestoppt.mp3 succeeded.
+2021-06-03 13:44:48,279|shutdown|WARNING|Shutting down TinyK/navigation.
+2021-06-03 13:44:48,288|__execute|DEBUG|TinyK send data: b'\x00\x0b\x00\x00\x00\x01\xff'
+2021-06-03 13:44:48,289|send|INFO|send data: b'\x00\x0b\x00\x00\x00\x01\xff'
+2021-06-03 13:44:48,394|send|INFO|connection write: b'\x00\x0b\x00\x00\x00\x01\xff'
+2021-06-03 13:44:48,497|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x01\x00\x0b\x00\x00\xff'
+2021-06-03 13:44:48,498|wait_for_response|INFO|wait_for_response type: 1, payload: 11, error_value: 0, eol: 255
+2021-06-03 13:44:48,503|create_response|INFO|create_response: response_type: ResponseType.ack
+2021-06-03 18:43:11,738|enter|DEBUG|Entering state WarmingUpState
+2021-06-03 18:43:11,785|configure|INFO|Configure image logger image_saving: True, image_path/home/gruppe38/dev/tobias/jetson-robot/robot/test_images/, image_logging:False, image_logging_port:62222
+2021-06-03 18:43:11,808|__check_server|DEBUG|Checking if the Triton server is up and running.
+2021-06-03 18:43:11,852|detect|DEBUG|TensorRTObjectDetection starting detection.
+2021-06-03 18:43:11,977|infer|DEBUG|Inferring through Triton server.
+2021-06-03 18:43:22,509|infer|DEBUG|Inference completed.
+2021-06-03 18:43:22,784|detect|DEBUG|TensorRTObjectDetection detection finished.
+2021-06-03 18:43:22,785|__check_server|DEBUG|Object detection is ready.
+2021-06-03 18:43:22,788|__init__|INFO|init UART: port /dev/ttyTHS1, baud_rate: 38400, write_timeout: 2, read_timeout: 60
+2021-06-03 18:43:22,788|reconnect|INFO|UART - reconnecting
+2021-06-03 18:43:23,110|__init__|INFO|Setting volume to 100%.
+2021-06-03 18:43:29,454|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 18:43:31,482|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 18:43:33,487|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 18:43:37,653|__play|DEBUG|Audio output of warming_up.mp3 succeeded.
+2021-06-03 18:43:37,715|__start_and_monitor|DEBUG|Restarting nvargus-daemon
+2021-06-03 18:43:37,995|__start_and_monitor|INFO|Starting RTSP. Binary=/usr/local/stairway-jones/rtsp_server/test-launch. Pipeline: nvarguscamerasrc ! video/x-raw(memory:NVMM),width=640,height=480,framerate=60/1 ! nvvidconv flip-method=2 ! omxh264enc ! video/x-h264,profile=baseline ! rtph264pay name=pay0 pt=96
+2021-06-03 18:43:38,458|__start_and_monitor|INFO|RTSP Server started.
+2021-06-03 18:43:38,459|__init_camera|DEBUG|Opening camera
+2021-06-03 18:53:48,977|enter|DEBUG|Entering state WarmingUpState
+2021-06-03 18:53:49,059|configure|INFO|Configure image logger image_saving: True, image_path/home/gruppe38/dev/tobias/jetson-robot/robot/test_images/, image_logging:False, image_logging_port:62222
+2021-06-03 18:53:49,082|__check_server|DEBUG|Checking if the Triton server is up and running.
+2021-06-03 18:53:49,141|detect|DEBUG|TensorRTObjectDetection starting detection.
+2021-06-03 18:53:49,253|infer|DEBUG|Inferring through Triton server.
+2021-06-03 18:54:03,804|infer|DEBUG|Inference completed.
+2021-06-03 18:54:04,045|detect|DEBUG|TensorRTObjectDetection detection finished.
+2021-06-03 18:54:04,046|__check_server|DEBUG|Object detection is ready.
+2021-06-03 18:54:04,049|__init__|INFO|init UART: port /dev/ttyTHS1, baud_rate: 38400, write_timeout: 2, read_timeout: 60
+2021-06-03 18:54:04,050|reconnect|INFO|UART - reconnecting
+2021-06-03 18:54:04,379|__init__|INFO|Setting volume to 100%.
+2021-06-03 18:54:09,636|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 18:54:11,912|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 18:54:13,917|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 18:54:18,650|__play|DEBUG|Audio output of warming_up.mp3 succeeded.
+2021-06-03 18:54:18,739|__start_and_monitor|DEBUG|Restarting nvargus-daemon
+2021-06-03 18:54:19,067|__start_and_monitor|INFO|Starting RTSP. Binary=/usr/local/stairway-jones/rtsp_server/test-launch. Pipeline: nvarguscamerasrc ! video/x-raw(memory:NVMM),width=640,height=480,framerate=60/1 ! nvvidconv flip-method=2 ! omxh264enc ! video/x-h264,profile=baseline ! rtph264pay name=pay0 pt=96
+2021-06-03 18:54:19,851|__start_and_monitor|INFO|RTSP Server started.
+2021-06-03 18:54:19,852|__init_camera|DEBUG|Opening camera
+2021-06-03 18:54:26,911|__init_camera|DEBUG|Camera opened
+2021-06-03 18:54:27,493|__init__|DEBUG|MaxObjectCountObjectDetectionEvaluator with objects: [<DetectedObject.edge: 9>]
+2021-06-03 18:54:27,494|__init__|DEBUG|MaxObjectCountObjectDetectionEvaluator with objects: [<DetectedObject.stairs: 1>]
+2021-06-03 18:54:27,528|connect|INFO|connect host:localhost, port: 58823
+2021-06-03 18:54:27,542|run|DEBUG|State WarmingUpState completed.
+2021-06-03 18:54:27,543|run|DEBUG|Entering state ManualDrivingState.
+2021-06-03 18:54:30,711|__play|DEBUG|Audio output of zustand_ManualDrivingState.mp3 succeeded.
+2021-06-03 18:54:30,712|receive|DEBUG|receive command 
+2021-06-03 20:07:46,230|enter|DEBUG|Entering state WarmingUpState
+2021-06-03 20:07:46,318|configure|INFO|Configure image logger image_saving: True, image_path/home/gruppe38/dev/tobias/jetson-robot/robot/test_images/, image_logging:False, image_logging_port:62222
+2021-06-03 20:07:46,340|__check_server|DEBUG|Checking if the Triton server is up and running.
+2021-06-03 20:07:46,408|detect|DEBUG|TensorRTObjectDetection starting detection.
+2021-06-03 20:07:46,554|infer|DEBUG|Inferring through Triton server.
+2021-06-03 20:07:57,684|infer|DEBUG|Inference completed.
+2021-06-03 20:07:57,808|detect|DEBUG|TensorRTObjectDetection detection finished.
+2021-06-03 20:07:57,809|__check_server|DEBUG|Object detection is ready.
+2021-06-03 20:07:57,811|__init__|INFO|init UART: port /dev/ttyTHS1, baud_rate: 38400, write_timeout: 2, read_timeout: 60
+2021-06-03 20:07:57,812|reconnect|INFO|UART - reconnecting
+2021-06-03 20:07:58,121|__init__|INFO|Setting volume to 100%.
+2021-06-03 20:08:03,592|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 20:08:05,667|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 20:08:07,672|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 20:08:12,241|__play|DEBUG|Audio output of warming_up.mp3 succeeded.
+2021-06-03 20:08:12,317|__start_and_monitor|DEBUG|Restarting nvargus-daemon
+2021-06-03 20:08:12,585|__start_and_monitor|INFO|Starting RTSP. Binary=/usr/local/stairway-jones/rtsp_server/test-launch. Pipeline: nvarguscamerasrc ! video/x-raw(memory:NVMM),width=640,height=480,framerate=60/1 ! nvvidconv flip-method=2 ! omxh264enc ! video/x-h264,profile=baseline ! rtph264pay name=pay0 pt=96
+2021-06-03 20:08:12,944|__start_and_monitor|INFO|RTSP Server started.
+2021-06-03 20:08:12,945|__init_camera|DEBUG|Opening camera
+2021-06-03 20:08:20,071|__init_camera|DEBUG|Camera opened
+2021-06-03 20:08:21,046|__init__|DEBUG|MaxObjectCountObjectDetectionEvaluator with objects: [<DetectedObject.edge: 9>]
+2021-06-03 20:08:21,048|__init__|DEBUG|MaxObjectCountObjectDetectionEvaluator with objects: [<DetectedObject.stairs: 1>]
+2021-06-03 20:08:21,085|connect|INFO|connect host:localhost, port: 58823
+2021-06-03 20:08:21,087|__init__|INFO|[Errno 111] Connection refused
+2021-06-03 20:08:21,088|__init__|ERROR|ERROR Image Logging failed [Errno 111] Connection refused
+2021-06-03 20:08:21,088|run|DEBUG|State WarmingUpState completed.
+2021-06-03 20:08:21,089|run|DEBUG|Entering state ManualDrivingState.
+2021-06-03 20:08:24,110|__play|DEBUG|Audio output of zustand_ManualDrivingState.mp3 succeeded.
+2021-06-03 20:08:24,111|receive|DEBUG|receive command 
+2021-06-03 20:08:24,112|run|ERROR|Unhandled exception. Stopping robot.
+Traceback (most recent call last):
+  File "/home/gruppe38/dev/tobias/jetson-robot/robot/robot.py", line 39, in run
+    state.enter()
+  File "/home/gruppe38/dev/tobias/jetson-robot/robot/manual_driving_state.py", line 85, in enter
+    data = self.client.get_next_command()
+  File "/home/gruppe38/dev/tobias/jetson-robot/robot/manual_driving_state.py", line 72, in get_next_command
+    data = self.debugging_socket.receive()
+  File "/home/gruppe38/dev/tobias/jetson-robot/robot/manual_driving_state.py", line 38, in receive
+    return self.sock.recv(1024)
+OSError: [Errno 107] Transport endpoint is not connected
+2021-06-03 20:08:26,326|__start_and_monitor|DEBUG|RTSP server exited with code -2
+2021-06-03 20:08:36,180|enter|DEBUG|Entering state WarmingUpState
+2021-06-03 20:08:36,199|configure|INFO|Configure image logger image_saving: True, image_path/home/gruppe38/dev/tobias/jetson-robot/robot/test_images/, image_logging:False, image_logging_port:62222
+2021-06-03 20:08:36,221|__check_server|DEBUG|Checking if the Triton server is up and running.
+2021-06-03 20:08:36,251|detect|DEBUG|TensorRTObjectDetection starting detection.
+2021-06-03 20:08:36,336|infer|DEBUG|Inferring through Triton server.
+2021-06-03 20:08:37,514|infer|DEBUG|Inference completed.
+2021-06-03 20:08:37,518|detect|DEBUG|TensorRTObjectDetection detection finished.
+2021-06-03 20:08:37,519|__check_server|DEBUG|Object detection is ready.
+2021-06-03 20:08:37,520|__init__|INFO|init UART: port /dev/ttyTHS1, baud_rate: 38400, write_timeout: 2, read_timeout: 60
+2021-06-03 20:08:37,520|reconnect|INFO|UART - reconnecting
+2021-06-03 20:08:37,823|__init__|INFO|Setting volume to 100%.
+2021-06-03 20:08:39,815|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 20:08:41,821|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 20:08:43,825|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 20:08:47,205|__play|DEBUG|Audio output of warming_up.mp3 succeeded.
+2021-06-03 20:08:47,263|__start_and_monitor|DEBUG|Restarting nvargus-daemon
+2021-06-03 20:08:47,468|__start_and_monitor|INFO|Starting RTSP. Binary=/usr/local/stairway-jones/rtsp_server/test-launch. Pipeline: nvarguscamerasrc ! video/x-raw(memory:NVMM),width=640,height=480,framerate=60/1 ! nvvidconv flip-method=2 ! omxh264enc ! video/x-h264,profile=baseline ! rtph264pay name=pay0 pt=96
+2021-06-03 20:08:47,686|__start_and_monitor|INFO|RTSP Server started.
+2021-06-03 20:08:47,687|__init_camera|DEBUG|Opening camera
+2021-06-03 20:08:50,454|__init_camera|DEBUG|Camera opened
+2021-06-03 20:08:50,506|__init__|DEBUG|MaxObjectCountObjectDetectionEvaluator with objects: [<DetectedObject.edge: 9>]
+2021-06-03 20:08:50,510|__init__|DEBUG|MaxObjectCountObjectDetectionEvaluator with objects: [<DetectedObject.stairs: 1>]
+2021-06-03 20:08:50,530|connect|INFO|connect host:localhost, port: 58823
+2021-06-03 20:08:50,545|run|DEBUG|State WarmingUpState completed.
+2021-06-03 20:08:50,546|run|DEBUG|Entering state ManualDrivingState.
+2021-06-03 20:08:54,082|__play|DEBUG|Audio output of zustand_ManualDrivingState.mp3 succeeded.
+2021-06-03 20:08:54,085|receive|DEBUG|receive command 
+2021-06-03 20:08:58,799|enter|INFO|ManualDrivingState received  {'type': 'jetson_command', 'commandID': 'move_to_position', 'commandPayload': 'drive_around'}
+2021-06-03 20:08:58,800|create_tinyK_command|INFO|ManualDrivingState - create_tinyK_command commandId  move_to_position, payload drive_around
+2021-06-03 20:08:58,801|enter|INFO|ManualDrivingState - command: <tinyk.MoveToPositionCommand object at 0x7f5c03f748>
+2021-06-03 20:08:58,802|__execute|DEBUG|TinyK send data: b'\x00\x0c\x00\x01\x00\x01\xff'
+2021-06-03 20:08:58,802|send|INFO|send data: b'\x00\x0c\x00\x01\x00\x01\xff'
+2021-06-03 20:08:58,904|send|INFO|connection write: b'\x00\x0c\x00\x01\x00\x01\xff'
+2021-06-03 20:08:59,005|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x01\x00\x0c\x00\x00\xff'
+2021-06-03 20:08:59,006|wait_for_response|INFO|wait_for_response type: 1, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:08:59,006|create_response|INFO|create_response: response_type: ResponseType.ack
+2021-06-03 20:08:59,007|send|DEBUG|send command {"type": "jetson_response", "responseID": "ack", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:09:02,499|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x03\x00\x0c\x00\x00\xff'
+2021-06-03 20:09:02,500|wait_for_response|INFO|wait_for_response type: 3, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:09:02,501|create_response|INFO|create_response: response_type: ResponseType.completed
+2021-06-03 20:09:02,501|send|DEBUG|send command {"type": "jetson_response", "responseID": "completed", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:09:02,502|receive|DEBUG|receive command 
+2021-06-03 20:09:13,003|enter|INFO|ManualDrivingState received  {'type': 'jetson_command', 'commandID': 'move_to_position', 'commandPayload': 'drive_around'}
+2021-06-03 20:09:13,004|create_tinyK_command|INFO|ManualDrivingState - create_tinyK_command commandId  move_to_position, payload drive_around
+2021-06-03 20:09:13,004|enter|INFO|ManualDrivingState - command: <tinyk.MoveToPositionCommand object at 0x7f7af16be0>
+2021-06-03 20:09:13,005|__execute|DEBUG|TinyK send data: b'\x00\x0c\x00\x01\x00\x02\xff'
+2021-06-03 20:09:13,005|send|INFO|send data: b'\x00\x0c\x00\x01\x00\x02\xff'
+2021-06-03 20:09:13,106|send|INFO|connection write: b'\x00\x0c\x00\x01\x00\x02\xff'
+2021-06-03 20:09:13,207|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x01\x00\x0c\x00\x00\xff'
+2021-06-03 20:09:13,208|wait_for_response|INFO|wait_for_response type: 1, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:09:13,209|create_response|INFO|create_response: response_type: ResponseType.ack
+2021-06-03 20:09:13,209|send|DEBUG|send command {"type": "jetson_response", "responseID": "ack", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:09:13,311|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x03\x00\x0c\x00\x00\xff'
+2021-06-03 20:09:13,312|wait_for_response|INFO|wait_for_response type: 3, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:09:13,313|create_response|INFO|create_response: response_type: ResponseType.completed
+2021-06-03 20:09:13,314|send|DEBUG|send command {"type": "jetson_response", "responseID": "completed", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:09:13,314|receive|DEBUG|receive command 
+2021-06-03 20:09:22,793|enter|INFO|ManualDrivingState received  {'type': 'jetson_command', 'commandID': 'move_to_position', 'commandPayload': 'hit_target_pictogram'}
+2021-06-03 20:09:22,793|create_tinyK_command|INFO|ManualDrivingState - create_tinyK_command commandId  move_to_position, payload hit_target_pictogram
+2021-06-03 20:09:22,794|enter|INFO|ManualDrivingState - command: <tinyk.MoveToPositionCommand object at 0x7f5c03fc50>
+2021-06-03 20:09:22,794|__execute|DEBUG|TinyK send data: b'\x00\x0c\x00\x04\x00\x03\xff'
+2021-06-03 20:09:22,797|send|INFO|send data: b'\x00\x0c\x00\x04\x00\x03\xff'
+2021-06-03 20:09:22,898|send|INFO|connection write: b'\x00\x0c\x00\x04\x00\x03\xff'
+2021-06-03 20:09:22,999|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x01\x00\x0c\x00\x00\xff'
+2021-06-03 20:09:23,000|wait_for_response|INFO|wait_for_response type: 1, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:09:23,000|create_response|INFO|create_response: response_type: ResponseType.ack
+2021-06-03 20:09:23,001|send|DEBUG|send command {"type": "jetson_response", "responseID": "ack", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:09:23,608|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x03\x00\x0c\x00\x00\xff'
+2021-06-03 20:09:23,608|wait_for_response|INFO|wait_for_response type: 3, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:09:23,609|create_response|INFO|create_response: response_type: ResponseType.completed
+2021-06-03 20:09:23,609|send|DEBUG|send command {"type": "jetson_response", "responseID": "completed", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:09:23,610|receive|DEBUG|receive command 
+2021-06-03 20:09:27,380|enter|INFO|ManualDrivingState received  {'type': 'jetson_command', 'commandID': 'move_to_position', 'commandPayload': 'drive_around'}
+2021-06-03 20:09:27,380|create_tinyK_command|INFO|ManualDrivingState - create_tinyK_command commandId  move_to_position, payload drive_around
+2021-06-03 20:09:27,381|enter|INFO|ManualDrivingState - command: <tinyk.MoveToPositionCommand object at 0x7f5c03f748>
+2021-06-03 20:09:27,382|__execute|DEBUG|TinyK send data: b'\x00\x0c\x00\x01\x00\x04\xff'
+2021-06-03 20:09:27,382|send|INFO|send data: b'\x00\x0c\x00\x01\x00\x04\xff'
+2021-06-03 20:09:27,483|send|INFO|connection write: b'\x00\x0c\x00\x01\x00\x04\xff'
+2021-06-03 20:09:27,584|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x01\x00\x0c\x00\x00\xff'
+2021-06-03 20:09:27,585|wait_for_response|INFO|wait_for_response type: 1, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:09:27,586|create_response|INFO|create_response: response_type: ResponseType.ack
+2021-06-03 20:09:27,586|send|DEBUG|send command {"type": "jetson_response", "responseID": "ack", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:09:28,289|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x03\x00\x0c\x00\x00\xff'
+2021-06-03 20:09:28,290|wait_for_response|INFO|wait_for_response type: 3, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:09:28,291|create_response|INFO|create_response: response_type: ResponseType.completed
+2021-06-03 20:09:28,292|send|DEBUG|send command {"type": "jetson_response", "responseID": "completed", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:09:28,292|receive|DEBUG|receive command 
+2021-06-03 20:09:49,860|enter|INFO|ManualDrivingState received  {'type': 'jetson_command', 'commandID': 'move_to_position', 'commandPayload': 'hit_stairs'}
+2021-06-03 20:09:49,861|create_tinyK_command|INFO|ManualDrivingState - create_tinyK_command commandId  move_to_position, payload hit_stairs
+2021-06-03 20:09:49,864|enter|INFO|ManualDrivingState - command: <tinyk.MoveToPositionCommand object at 0x7f7af16be0>
+2021-06-03 20:09:49,864|__execute|DEBUG|TinyK send data: b'\x00\x0c\x00\x06\x00\x05\xff'
+2021-06-03 20:09:49,865|send|INFO|send data: b'\x00\x0c\x00\x06\x00\x05\xff'
+2021-06-03 20:09:49,966|send|INFO|connection write: b'\x00\x0c\x00\x06\x00\x05\xff'
+2021-06-03 20:09:50,067|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x01\x00\x0c\x00\x00\xff'
+2021-06-03 20:09:50,067|wait_for_response|INFO|wait_for_response type: 1, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:09:50,068|create_response|INFO|create_response: response_type: ResponseType.ack
+2021-06-03 20:09:50,069|send|DEBUG|send command {"type": "jetson_response", "responseID": "ack", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:09:50,531|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x03\x00\x0c\x00\x00\xff'
+2021-06-03 20:09:50,532|wait_for_response|INFO|wait_for_response type: 3, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:09:50,533|create_response|INFO|create_response: response_type: ResponseType.completed
+2021-06-03 20:09:50,533|send|DEBUG|send command {"type": "jetson_response", "responseID": "completed", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:09:50,534|receive|DEBUG|receive command 
+2021-06-03 20:11:20,877|enter|INFO|ManualDrivingState received  {'type': 'jetson_command', 'commandID': 'move_to_position', 'commandPayload': 'drive_around'}
+2021-06-03 20:11:20,878|create_tinyK_command|INFO|ManualDrivingState - create_tinyK_command commandId  move_to_position, payload drive_around
+2021-06-03 20:11:20,878|enter|INFO|ManualDrivingState - command: <tinyk.MoveToPositionCommand object at 0x7f5c03fc50>
+2021-06-03 20:11:20,879|__execute|DEBUG|TinyK send data: b'\x00\x0c\x00\x01\x00\x06\xff'
+2021-06-03 20:11:20,879|send|INFO|send data: b'\x00\x0c\x00\x01\x00\x06\xff'
+2021-06-03 20:11:20,980|send|INFO|connection write: b'\x00\x0c\x00\x01\x00\x06\xff'
+2021-06-03 20:11:21,081|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x01\x00\x0c\x00\x00\xff'
+2021-06-03 20:11:21,082|wait_for_response|INFO|wait_for_response type: 1, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:11:21,083|create_response|INFO|create_response: response_type: ResponseType.ack
+2021-06-03 20:11:21,083|send|DEBUG|send command {"type": "jetson_response", "responseID": "ack", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:11:23,860|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x03\x00\x0c\x00\x00\xff'
+2021-06-03 20:11:23,861|wait_for_response|INFO|wait_for_response type: 3, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:11:23,862|create_response|INFO|create_response: response_type: ResponseType.completed
+2021-06-03 20:11:23,863|send|DEBUG|send command {"type": "jetson_response", "responseID": "completed", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:11:23,864|receive|DEBUG|receive command 
+2021-06-03 20:11:28,119|enter|INFO|ManualDrivingState received  {'type': 'jetson_command', 'commandID': 'move_to_position', 'commandPayload': 'hit_stairs'}
+2021-06-03 20:11:28,119|create_tinyK_command|INFO|ManualDrivingState - create_tinyK_command commandId  move_to_position, payload hit_stairs
+2021-06-03 20:11:28,120|enter|INFO|ManualDrivingState - command: <tinyk.MoveToPositionCommand object at 0x7f5c03f748>
+2021-06-03 20:11:28,120|__execute|DEBUG|TinyK send data: b'\x00\x0c\x00\x06\x00\x07\xff'
+2021-06-03 20:11:28,121|send|INFO|send data: b'\x00\x0c\x00\x06\x00\x07\xff'
+2021-06-03 20:11:28,222|send|INFO|connection write: b'\x00\x0c\x00\x06\x00\x07\xff'
+2021-06-03 20:11:28,323|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x01\x00\x0c\x00\x00\xff'
+2021-06-03 20:11:28,324|wait_for_response|INFO|wait_for_response type: 1, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:11:28,324|create_response|INFO|create_response: response_type: ResponseType.ack
+2021-06-03 20:11:28,325|send|DEBUG|send command {"type": "jetson_response", "responseID": "ack", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:11:28,805|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x03\x00\x0c\x00\x00\xff'
+2021-06-03 20:11:28,806|wait_for_response|INFO|wait_for_response type: 3, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:11:28,807|create_response|INFO|create_response: response_type: ResponseType.completed
+2021-06-03 20:11:28,807|send|DEBUG|send command {"type": "jetson_response", "responseID": "completed", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:11:28,808|receive|DEBUG|receive command 
+2021-06-03 20:11:34,505|enter|INFO|ManualDrivingState received  {'type': 'jetson_command', 'commandID': 'move_to_position', 'commandPayload': 'drive_around'}
+2021-06-03 20:11:34,506|create_tinyK_command|INFO|ManualDrivingState - create_tinyK_command commandId  move_to_position, payload drive_around
+2021-06-03 20:11:34,507|enter|INFO|ManualDrivingState - command: <tinyk.MoveToPositionCommand object at 0x7f7af16be0>
+2021-06-03 20:11:34,507|__execute|DEBUG|TinyK send data: b'\x00\x0c\x00\x01\x00\x08\xff'
+2021-06-03 20:11:34,508|send|INFO|send data: b'\x00\x0c\x00\x01\x00\x08\xff'
+2021-06-03 20:11:34,609|send|INFO|connection write: b'\x00\x0c\x00\x01\x00\x08\xff'
+2021-06-03 20:11:34,710|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x01\x00\x0c\x00\x00\xff'
+2021-06-03 20:11:34,711|wait_for_response|INFO|wait_for_response type: 1, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:11:34,712|create_response|INFO|create_response: response_type: ResponseType.ack
+2021-06-03 20:11:34,713|send|DEBUG|send command {"type": "jetson_response", "responseID": "ack", "responsePayload": "CommandType.move_to_position"}
+2021-06-03 20:12:34,875|wait_for_response|DEBUG|TinyK: Received data: b''
+2021-06-03 20:12:34,876|wait_for_response|ERROR|TinyK: Received only 0 bytes, expected 7. Returning failure.
+2021-06-03 20:12:34,877|__resend_last_command|INFO|TinyK - resending last command.
+2021-06-03 20:12:34,877|reconnect|INFO|UART - reconnecting
+2021-06-03 20:12:35,193|__execute|DEBUG|TinyK send data: b'\x00\x0c\x00\x01\x00\x08\xff'
+2021-06-03 20:12:35,194|send|INFO|send data: b'\x00\x0c\x00\x01\x00\x08\xff'
+2021-06-03 20:12:35,295|send|INFO|connection write: b'\x00\x0c\x00\x01\x00\x08\xff'
+2021-06-03 20:12:35,396|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x01\x00\x0c\x00\x00\xff'
+2021-06-03 20:12:35,396|wait_for_response|INFO|wait_for_response type: 1, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:12:35,397|create_response|INFO|create_response: response_type: ResponseType.ack
+2021-06-03 20:13:31,716|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x03\x00\x00\x00\x00\xff'
+2021-06-03 20:13:31,717|wait_for_response|INFO|wait_for_response type: 3, payload: 0, error_value: 0, eol: 255
+2021-06-03 20:13:31,718|create_response|INFO|create_response: response_type: ResponseType.completed
+2021-06-03 20:13:31,718|wait_for_response|ERROR|TinyK - Creating response failed
+Traceback (most recent call last):
+  File "/home/gruppe38/dev/tobias/jetson-robot/robot/tinyk.py", line 319, in wait_for_response
+    return self.create_response(type, payload, error_value)
+  File "/home/gruppe38/dev/tobias/jetson-robot/robot/tinyk.py", line 340, in create_response
+    return TinyKResponse(response_type, CommandType(payload))
+  File "/usr/lib/python3.6/enum.py", line 293, in __call__
+    return cls.__new__(cls, value)
+  File "/usr/lib/python3.6/enum.py", line 535, in __new__
+    return cls._missing_(value)
+  File "/usr/lib/python3.6/enum.py", line 548, in _missing_
+    raise ValueError("%r is not a valid %s" % (value, cls.__name__))
+ValueError: 0 is not a valid CommandType
+2021-06-03 20:13:31,732|__resend_last_command|INFO|TinyK - resending last command.
+2021-06-03 20:13:31,733|reconnect|INFO|UART - reconnecting
+2021-06-03 20:13:32,036|__execute|DEBUG|TinyK send data: b'\x00\x0c\x00\x01\x00\x08\xff'
+2021-06-03 20:13:32,038|send|INFO|send data: b'\x00\x0c\x00\x01\x00\x08\xff'
+2021-06-03 20:13:32,139|send|INFO|connection write: b'\x00\x0c\x00\x01\x00\x08\xff'
+2021-06-03 20:13:32,240|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x01\x00\x0c\x00\x00\xff'
+2021-06-03 20:13:32,240|wait_for_response|INFO|wait_for_response type: 1, payload: 12, error_value: 0, eol: 255
+2021-06-03 20:13:32,241|create_response|INFO|create_response: response_type: ResponseType.ack
+2021-06-03 20:13:34,094|__start_and_monitor|DEBUG|RTSP server exited with code -2
+2021-06-03 20:13:36,561|__play|DEBUG|Audio output of lauf_gestoppt.mp3 succeeded.
+2021-06-03 20:13:36,562|shutdown|WARNING|Shutting down TinyK/navigation.
+2021-06-03 20:13:36,562|__execute|DEBUG|TinyK send data: b'\x00\x0b\x00\x00\x00\t\xff'
+2021-06-03 20:13:36,563|send|INFO|send data: b'\x00\x0b\x00\x00\x00\t\xff'
+2021-06-03 20:13:36,664|send|INFO|connection write: b'\x00\x0b\x00\x00\x00\t\xff'
+2021-06-03 20:13:36,764|wait_for_response|DEBUG|TinyK: Received data: b'\x00\x01\x00\x0b\x00\x00\xff'
+2021-06-03 20:13:36,765|wait_for_response|INFO|wait_for_response type: 1, payload: 11, error_value: 0, eol: 255
+2021-06-03 20:13:36,765|create_response|INFO|create_response: response_type: ResponseType.ack
+2021-06-03 20:13:46,732|enter|DEBUG|Entering state WarmingUpState
+2021-06-03 20:13:46,745|configure|INFO|Configure image logger image_saving: True, image_path/home/gruppe38/dev/tobias/jetson-robot/robot/test_images/, image_logging:False, image_logging_port:62222
+2021-06-03 20:13:46,767|__check_server|DEBUG|Checking if the Triton server is up and running.
+2021-06-03 20:13:46,779|detect|DEBUG|TensorRTObjectDetection starting detection.
+2021-06-03 20:13:46,856|infer|DEBUG|Inferring through Triton server.
+2021-06-03 20:13:47,974|infer|DEBUG|Inference completed.
+2021-06-03 20:13:47,978|detect|DEBUG|TensorRTObjectDetection detection finished.
+2021-06-03 20:13:47,979|__check_server|DEBUG|Object detection is ready.
+2021-06-03 20:13:47,980|__init__|INFO|init UART: port /dev/ttyTHS1, baud_rate: 38400, write_timeout: 2, read_timeout: 60
+2021-06-03 20:13:47,981|reconnect|INFO|UART - reconnecting
+2021-06-03 20:13:48,283|__init__|INFO|Setting volume to 100%.
+2021-06-03 20:13:50,271|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 20:13:52,276|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 20:13:54,281|__play|DEBUG|Audio output of warming_up.mp3 failed.
+2021-06-03 20:13:57,588|__play|DEBUG|Audio output of warming_up.mp3 succeeded.
+2021-06-03 20:13:57,645|__start_and_monitor|DEBUG|Restarting nvargus-daemon
+2021-06-03 20:13:57,826|__start_and_monitor|INFO|Starting RTSP. Binary=/usr/local/stairway-jones/rtsp_server/test-launch. Pipeline: nvarguscamerasrc ! video/x-raw(memory:NVMM),width=640,height=480,framerate=60/1 ! nvvidconv flip-method=2 ! omxh264enc ! video/x-h264,profile=baseline ! rtph264pay name=pay0 pt=96
+2021-06-03 20:13:58,005|__start_and_monitor|INFO|RTSP Server started.
+2021-06-03 20:13:58,006|__init_camera|DEBUG|Opening camera
+2021-06-03 20:14:00,553|__init_camera|DEBUG|Camera opened
+2021-06-03 20:14:00,575|__init__|DEBUG|MaxObjectCountObjectDetectionEvaluator with objects: [<DetectedObject.edge: 9>]
+2021-06-03 20:14:00,576|__init__|DEBUG|MaxObjectCountObjectDetectionEvaluator with objects: [<DetectedObject.stairs: 1>]
+2021-06-03 20:14:00,590|connect|INFO|connect host:localhost, port: 58823
+2021-06-03 20:14:00,600|run|DEBUG|State WarmingUpState completed.
+2021-06-03 20:14:00,601|run|DEBUG|Entering state ManualDrivingState.
+2021-06-03 20:14:03,745|__play|DEBUG|Audio output of zustand_ManualDrivingState.mp3 succeeded.
+2021-06-03 20:14:03,746|receive|DEBUG|receive command 

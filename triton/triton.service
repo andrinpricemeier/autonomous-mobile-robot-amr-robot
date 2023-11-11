@@ -1,0 +1,12 @@
+[Unit]
+Description=Triton service
+After=network.target
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/stairway-jones/triton/start_server.sh
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

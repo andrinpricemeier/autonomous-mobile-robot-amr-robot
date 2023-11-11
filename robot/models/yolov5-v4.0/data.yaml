@@ -1,0 +1,9 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: /usr/local/stairway-jones/data/augmented_jetson/yolo/images/train
+val: /usr/local/stairway-jones/data/augmented_jetson/yolo/images/val
+
+# number of classes
+nc: 10
+
+# class names
+names: ['brick', 'stairs', 'steps', 'hammer', 'taco', 'ruler', 'bucket', 'pencil', 'wrench', 'edge']

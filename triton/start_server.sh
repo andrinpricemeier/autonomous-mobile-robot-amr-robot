@@ -1,0 +1,1 @@
+LD_PRELOAD=/home/gruppe38/triton/plugins/libmyplugins.so ./bin/tritonserver --model-repository=/home/gruppe38/triton/models --backend-directory=/home/gruppe38/triton/backends --min-supported-compute-capability=5.3 --strict-model-config=false --log-verbose=1

@@ -1,0 +1,14 @@
+[Unit]
+Description=stairway jones
+After=multi-user.target
+
+[Service]
+User=gruppe38
+Group=stairway-jones
+WorkingDirectory=/usr/local/stairway-jones/robot_prod
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /usr/local/stairway-jones/robot_prod/runner.py
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,44 @@
+before_script:
+  - echo "$SSH_KNOWN_HOSTS" >> ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+
+test:
+  stage: deploy
+  script:
+    - rm -fr /usr/local/stairway-jones/robot_test
+    - cp -R robot /usr/local/stairway-jones/robot_test
+    - mv /usr/local/stairway-jones/robot_test/robot.test.conf /usr/local/stairway-jones/robot_test/robot.conf
+    - mv /usr/local/stairway-jones/robot_test/logger.test.conf /usr/local/stairway-jones/robot_test/logger.conf
+    - cd /usr/local/stairway-jones/robot_test
+    - python3 -m compileall . guidance examples tests -l -f
+    - python3 -m pytest --junitxml=report.xml tests
+    - cp /usr/local/stairway-jones/robot_test/report.xml ${CI_PROJECT_DIR}
+  artifacts:
+    when: always
+    reports:
+      junit: report.xml
+
+uat:
+  stage: deploy
+  script:
+    - rm -fr /usr/local/stairway-jones/robot_uat
+    - cp -R robot /usr/local/stairway-jones/robot_uat
+    - mv /usr/local/stairway-jones/robot_uat/robot.uat.conf /usr/local/stairway-jones/robot_uat/robot.conf
+    - mv /usr/local/stairway-jones/robot_uat/logger.uat.conf /usr/local/stairway-jones/robot_uat/logger.conf
+
+prod:
+  stage: deploy
+  when: manual
+  script:
+    - rm -fr /usr/local/stairway-jones/robot_prod
+    - cp -R robot /usr/local/stairway-jones/robot_prod
+    - mv /usr/local/stairway-jones/robot_prod/robot.prod.conf /usr/local/stairway-jones/robot_prod/robot.conf
+    - mv /usr/local/stairway-jones/robot_prod/logger.prod.conf /usr/local/stairway-jones/robot_prod/logger.conf
+
+tensorrt:
+  stage: test
+  when: manual
+  script:
+    - rm -fr /usr/local/stairway-jones/tensorrt
+    - cp -R tensorrt /usr/local/stairway-jones
+    - bash tensorrt/create_tensorrt_engine.sh

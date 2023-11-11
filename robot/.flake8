@@ -1,0 +1,11 @@
+# .flake8
+[flake8]
+select = ANN,B,B9,C,E,F,W
+ignore = E203,E501,W503,ANN101,B903
+max-line-length = 150
+max-complexity = 10
+exclude =
+    .nox,
+    __pycache__,
+    .pytest_cache,
+    .mypy_cache
